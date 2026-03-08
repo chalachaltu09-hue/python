@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Tailwind Extensions */
+@layer base {
+  /* Amharic font support */
+  .font-amharic {
+    font-family: 'Noto Sans Ethiopic', 'Inter', system-ui, sans-serif;
+  }
+
+  /* Smooth transitions */
+  * {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  /* Custom button variants */
+  .btn-white {
+    @apply btn bg-white text-gray-900 hover:bg-gray-100 focus:ring-white dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700;
+  }
+
+  .btn-outline-white {
+    @apply btn border border-white text-white hover:bg-white hover:text-gray-900 focus:ring-white;
+  }
+
+  /* Custom card variants */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .card-gradient {
+    @apply bg-gradient-to-br from-primary-50 to-blue-50 dark:from-gray-800 dark:to-gray-900;
+  }
+
+  /* Form elements */
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1;
+  }
+
+  .form-error {
+    @apply mt-1 text-sm text-red-600 dark:text-red-400;
+  }
+
+  .form-helper {
+    @apply mt-1 text-sm text-gray-500 dark:text-gray-400;
+  }
+
+  /* Dropzone */
+  .dropzone {
+    @apply border-2 border-dashed rounded-xl p-8 text-center cursor-pointer transition-all duration-300;
+  }
+
+  .dropzone-active {
+    @apply border-primary-500 bg-primary-50 dark:bg-primary-900/20;
+  }
+
+  .dropzone-reject {
+    @apply border-red-500 bg-red-50 dark:bg-red-900/20;
+  }
+
+  /* Skill tags */
+  .skill-tag {
+    @apply px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-200 hover:scale-105;
+  }
+
+  .skill-tag-hard {
+    @apply skill-tag bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 hover:bg-blue-200 dark:hover:bg-blue-800;
+  }
+
+  .skill-tag-soft {
+    @apply skill-tag bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 hover:bg-green-200 dark:hover:bg-green-800;
+  }
+
+  /* Job cards */
+  .job-card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden cursor-pointer;
+  }
+
+  .job-card:hover {
+    @apply transform -translate-y-1;
+  }
+
+  /* Match percentage badge */
+  .match-badge {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium;
+  }
+
+  .match-excellent {
+    @apply match-badge bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+  }
+
+  .match-good {
+    @apply match-badge bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200;
+  }
+
+  .match-fair {
+    @apply match-badge bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200;
+  }
+
+  .match-poor {
+    @apply match-badge bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200;
+  }
+}
+
+@layer utilities {
+  /* Custom animations */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+
+  /* Custom gradients */
+  .gradient-primary {
+    @apply bg-gradient-to-r from-primary-600 to-primary-400;
+  }
+
+  .gradient-success {
+    @apply bg-gradient-to-r from-green-600 to-green-400;
+  }
+
+  .gradient-warning {
+    @apply bg-gradient-to-r from-yellow-600 to-yellow-400;
+  }
+
+  .gradient-error {
+    @apply bg-gradient-to-r from-red-600 to-red-400;
+  }
+
+  /* Glass morphism */
+  .glass {
+    @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-md;
+  }
+
+  .glass-sm {
+    @apply bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm;
+  }
+
+  .glass-lg {
+    @apply bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg;
+  }
+
+  /* Text gradients */
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400;
+  }
+
+  .text-gradient-success {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400;
+  }
+
+  /* Line clamp */
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  /* Aspect ratios */
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .aspect-portrait {
+    aspect-ratio: 3 / 4;
+  }
+}

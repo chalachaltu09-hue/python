@@ -1,0 +1,33 @@
+{
+  "generic": "አንድ ስህተት ተከስቷል",
+  "notFound": "ገጽ አልተገኘም",
+  "unauthorized": "ወደዚህ ገጽ ለመግባት አልተፈቀደልዎትም",
+  "forbidden": "ይህን ድርጊት ለመፈጸም ፈቃድ የለዎትም",
+  "badRequest": "ልክ ያልሆነ ጥያቄ",
+  "validationError": "የማረጋገጫ ስህተት",
+  "serverError": "የአገልጋይ ስህተት",
+  "serviceUnavailable": "አገልግሎት አይገኝም",
+  "timeout": "ጥያቄ ጊዜ አልፏል",
+  "networkError": "የኔትወርክ ስህተት። እባክዎ ግንኙነትዎን ያረጋግጡ",
+  "upload": {
+    "fileTooLarge": "የፋይል መጠን በጣም ትልቅ ነው። ከፍተኛ 5ሜባ",
+    "invalidFile": "ልክ ያልሆነ የፋይል አይነት። PDF ፋይሎች ብቻ",
+    "uploadFailed": "ፋይል መስቀል አልተሳካም",
+    "processingFailed": "ፋይል ማስኬድ አልተሳካም"
+  },
+  "resume": {
+    "notFound": "ሲቪ አልተገኘም",
+    "parseError": "ሲቪ መተንተን አልተሳካም",
+    "analysisFailed": "ትንተና አልተሳካም"
+  },
+  "job": {
+    "notFound": "ሥራ አልተገኘም",
+    "applicationFailed": "ማመልከቻ አልተሳካም",
+    "saveFailed": "ሥራ ማስቀመጥ አልተሳካም"
+  },
+  "auth": {
+    "sessionExpired": "ክፍለ ጊዜ ጊዜው አልፏል። እባክዎ እንደገና ይግቡ",
+    "notAuthenticated": "እባክዎ በመጀመሪያ ይግቡ",
+    "invalidCredentials": "ልክ ያልሆነ ኢሜይል ወይም ይለፍ ቃል"
+  }
+}
